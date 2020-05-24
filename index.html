@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Sistema de Ventas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/b5f1d4094e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="cuadrog" style="float: left;">
+        <h3 class="sub">Producto:</h3>
+        <input type="text" class="barra" placeholder="Buscar por código de barra o nombre del producto">
+        <div class="cuadromed" style="float: left;">
+            <table>
+                <thead>
+                    <th>ITEM</th>
+                    <th>CANT.</th>
+                    <th>PRODUCTO</th>
+                    <th>MARCA</th>
+                    <th>PRECIO</th>
+                    <th>IMPORTE</th>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" class="cantidad"></td>
+                    <td>Leche Evaporada Entera Pack x 6 Un Lata 410 Gr</td>
+                    <td>GLORIA</td>
+                    <td><input type="text" class="precio"></td>
+                    <td><input type="text" class="importe"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="text" class="cantidad"></td>
+                    <td>Leche chocolatada Tetra Pack 1 Lt</td>
+                    <td>LAIVE</td>
+                    <td><input type="text" class="precio"></td>
+                    <td><input type="text" class="importe"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" class="cantidad"></td>
+                    <td>Leche fresca 0% lactosa Tetra Pack 1 Lt</td>
+                    <td>LAIVE</td>
+                    <td><input type="text" class="precio"></td>
+                    <td><input type="text" class="importe"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!------ Opciones ------>
+            <div class="item" style="float: left;">
+                <a href="#" class="guardar" style="float: left;">Guardar Compra</a>
+                <button class="icon1"><i class="fas fa-shopping-cart"></i></button>
+                <a href="#" class="guardar vaciar" style="float: left;">Vaciar Carrito</a>
+                <button class="icon2"><i class="fas fa-trash-alt"></i></button>
+            </div>
+            
+        <!----- Cuadro de la Izquierda ------>
+        <div class="cuadroizq" style="float: left;">
+
+            <!----Cuadro Arriba ------>
+            <div class="cuadroarriba" style="float: left;">
+                <input type="text" class="monto1"><h1 class="monto2">S/.</h1>
+            </div>
+            <!-----Cuadro abajo ------>
+
+            <label class="documento" for="factura" style="float: left;"><b>DOCUMENTO</b></label>
+            <select name="factura" id="factura" class="fac">
+                <option>FACTURA</option>
+                <option>BOLETA</option>
+            </select>
+            <label class="tipo" for="pago" style="float: left;"><b>TIPO DE PAGO</b></label>
+            <select class="pago" name="pago" id="pago">
+                <option>CONTADO</option>
+                <option></option>
+            </select>
+            <label class="serie" for="#"><b>SERIE</b></label>
+            <input type="text" class="serie2" placeholder="001">
+
+            <label class="venta" for="#"><b>N° DE VENTA</b></label>
+            <input type="text" class="venta2" placeholder="000001">
+
+            <label class="fecha" for="#"><b>FECHA DE COMPRA</b></label>
+            <input type="text" class="fecha2" placeholder="dd/mm/aaaa">
+
+            <label class="proveedor" for="#"><b>PROVEEDOR</b></label>
+            <input type="text" class="proveedor2" placeholder="RUC O Razón Social">
+
+            <div class="linea"></div>
+
+            <table class="total">
+                <tr>
+                    <td class="total2">SUB TOTAL</td>
+                    <td class="total3"><input type="text" class="igv"><p href="#" class="s">S/.</p></td>
+                </tr>
+                <tr>
+                    <td class="total2">I.G.V(18%)</td>
+                    <td class="total3"><input type="text" class="igv"><p href="#" class="s">S/.</p></td>
+                </tr>
+                <tr>
+                    <td class="total2">TOTAL</td>
+                    <td class="total3"><input type="text" class="igv"><p href="#" class="s">S/.</p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
